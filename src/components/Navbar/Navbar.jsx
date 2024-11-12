@@ -48,6 +48,12 @@ const Navbar = () => {
               About
             </Link>
             <Link
+              to="/blog"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-bold uppercase"
+            >
+              Blog
+            </Link>
+            <Link
               to="/contact"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-bold uppercase"
             >
@@ -116,6 +122,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               About
+            </Link>
+            <Link
+              to="/blog"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Blog
             </Link>
             <Link
               to="/contact"

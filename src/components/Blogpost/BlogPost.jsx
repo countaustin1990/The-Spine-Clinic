@@ -1,7 +1,11 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import Seventh from '../../assets/seventh.jpg';
+import Eighth from '../../assets/eighth.jpeg';
+import Nineth from '../../assets/nineth.webp';
+import Tenth from '../../assets/tenth.jpg';
+ 
 const BlogCarousel = () => {
   // Blog posts data
   const posts = [
@@ -10,21 +14,21 @@ const BlogCarousel = () => {
       content: 'Orthopedic surgery is a specialty focusing on conditions involving the musculoskeletal system.',
       date: 'September 5, 2024',
       author: 'Dr. John Doe',
-      image: '../../assets/SpaceSept.jpg',
+      image: Eighth,
     },
     {
       title: 'Advancements in Joint Replacement',
       content: 'New technologies are revolutionizing the way joint replacements are performed...',
       date: 'August 22, 2024',
       author: 'Dr. Jane Smith',
-      image: 'https://via.placeholder.com/800x400',
+      image: Nineth,
     },
     {
       title: 'Rehabilitation Post-Orthopedic Surgery',
       content: 'Rehabilitation is crucial for a complete recovery following orthopedic surgery...',
       date: 'August 10, 2024',
       author: 'Dr. Robert Lee',
-      image: 'https://via.placeholder.com/800x400',
+      image: Tenth,
     },
   ];
 
@@ -44,7 +48,7 @@ const BlogCarousel = () => {
       'Orthopedic surgery plays a key role in improving mobility and reducing pain for individuals suffering from musculoskeletal conditions. This article dives deep into how these surgeries bring about transformative changes, making patients more independent and improving their overall quality of life.',
     author: 'Dr. Sarah Brown',
     date: 'September 4, 2024',
-    image: 'https://via.placeholder.com/400x300',
+    image: Seventh,
   };
 
   return (

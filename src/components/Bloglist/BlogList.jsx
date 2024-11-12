@@ -1,5 +1,10 @@
-
 import { FaRegCalendarAlt, FaUser } from 'react-icons/fa';
+import First from '../../assets/first.jpg';
+import Second from '../../assets/second.jpg';
+import Third from '../../assets/third.jpg';
+import Fourth from '../../assets/fourth.webp';
+import Fifth from '../../assets/fifth.jpg';
+import Sixth from '../../assets/sixth.png';
 
 const posts = [
   {
@@ -8,7 +13,7 @@ const posts = [
     excerpt: 'A comprehensive guide to orthopedic surgery, including procedures, benefits, and recovery.',
     date: 'September 5, 2024',
     author: 'Dr. John Doe',
-    image: 'https://via.placeholder.com/400x250',
+    image: First, // Use the imported image
   },
   {
     id: 2,
@@ -16,40 +21,39 @@ const posts = [
     excerpt: 'Explore the latest advancements in physical therapy and their impact on patient recovery.',
     date: 'August 30, 2024',
     author: 'Dr. Jane Smith',
-    image: 'https://via.placeholder.com/400x250',
+    image: Second,
   },
-  // Add more posts here
-   {
+  {
     id: 3,
-    title: 'Advancements in Physical Therapy',
-    excerpt: 'Explore the latest advancements in physical therapy and their impact on patient recovery.',
-    date: 'August 30, 2024',
-    author: 'Dr. Jane Smith',
-    image: 'https://via.placeholder.com/400x250',
+    title: 'Global Trends in Orthopedic Surgery: New Technologies & Innovations',
+    excerpt: 'Discover the latest advancements in orthopedic surgery, including bone reconstruction and robotic surgery technologies.',
+    date: 'September 15, 2024',
+    author: 'Dr. Michael Lee',
+    image: Third,
   },
-   {
+  {
     id: 4,
-    title: 'Advancements in Physical Therapy',
-    excerpt: 'Explore the latest advancements in physical therapy and their impact on patient recovery.',
-    date: 'August 30, 2024',
-    author: 'Dr. Jane Smith',
-    image: 'https://via.placeholder.com/400x250',
+    title: 'Advancements in Physical Therapy and Recovery Strategies',
+    excerpt: 'Explore the role of regenerative medicine and physiotherapy in enhancing patient outcomes post-surgery.',
+    date: 'August 25, 2024',
+    author: 'Dr. Patricia Smith',
+    image: Fourth,
   },
   {
-  id: 5,
-    title: 'Advancements in Physical Therapy',
-    excerpt: 'Explore the latest advancements in physical therapy and their impact on patient recovery.',
-    date: 'August 30, 2024',
-    author: 'Dr. Jane Smith',
-    image: 'https://via.placeholder.com/400x250',
+    id: 5,
+    title: 'Orthopedic Surgery in Nigeria: Challenges & Opportunities',
+    excerpt: 'A deep dive into the state of orthopedic surgery in Nigeria and ongoing efforts to improve healthcare infrastructure.',
+    date: 'August 20, 2024',
+    author: 'Dr. Richard Olamide',
+    image: Fifth,
   },
   {
-  id: 6,
-    title: 'Advancements in Physical Therapy',
-    excerpt: 'Explore the latest advancements in physical therapy and their impact on patient recovery.',
-    date: 'August 30, 2024',
-    author: 'Dr. Jane Smith',
-    image: 'https://via.placeholder.com/400x250',
+    id: 6,
+    title: 'Regenerative Orthopedics: The Future of Joint Repair',
+    excerpt: 'How regenerative medicine is transforming the orthopedic surgery landscape globally and in Nigeria.',
+    date: 'August 18, 2024',
+    author: 'Dr. Sarah Brown',
+    image: Sixth,
   },
 ];
 
