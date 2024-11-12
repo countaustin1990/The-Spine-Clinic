@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css'; // Import custom CSS
 //import Heropic1 from "../../assets/Heropic1.avif" // Adjust the path as necessary
-import VideoPlayer from '../../components/videos/VideoPlayer.pro';
+import VideoPlayer from '../../components/videos/VideoPlayer';
 
 const settings = {
   dots: true,

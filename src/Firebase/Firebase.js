@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import { getDatabase } from "firebase/database";  // Import for Realtime Database
+import { getDatabase } from "firebase/database";
+
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -9,12 +11,13 @@ const firebaseConfig = {
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,// Add this line if using Realtime Database
-  measurementId:import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const realtimeDb = getDatabase(app);  // Initialize Realtime Database
+const realtimeDb = getDatabase(app);
+const auth = getAuth(app);
 
-export { db, realtimeDb };
+export { db, realtimeDb, auth, signInWithEmailAndPassword, signOut, onAuthStateChanged };

@@ -70,7 +70,7 @@ const Contact = () => {
           message: 'Failed to send message. Please try again later.',
         });
       }
-    } catch (error) {
+    } catch {
       setFormStatus({
         success: false,
         message: 'Error occurred. Please try again.',
@@ -90,7 +90,6 @@ const Contact = () => {
         className="absolute top-4 left-4 flex items-center bg-blue-500 text-gray-200 py-2 px-4 rounded-full font-semibold hover:bg-blue-600 transition duration-300"
       >
         <HiOutlineArrowSmLeft className="mr-2" aria-label="Back to Home" />
-       
       </button>
 
       <div className="w-full max-w-5xl bg-blue-200 rounded-lg shadow-lg p-8 md:p-12 space-y-8">
@@ -113,7 +112,7 @@ const Contact = () => {
               <FaPhoneAlt className="text-xl text-gray-600" aria-label="Phone" />
               <div>
                 <h4 className="font-semibold text-gray-700">Phone</h4>
-                <p className="text-gray-600">+123 456 7890</p>
+                <p className="text-gray-600">+234-813-371-5097</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -127,7 +126,7 @@ const Contact = () => {
               <FaMapMarkerAlt className="text-xl text-gray-600" aria-label="Location" />
               <div>
                 <h4 className="font-semibold text-gray-700">Location</h4>
-                <p className="text-gray-600">123 Main St, Abuja, Nigeria</p>
+                <p className="text-gray-600">Lekki Phase 1, Lagos, Nigeria</p>
               </div>
             </div>
 

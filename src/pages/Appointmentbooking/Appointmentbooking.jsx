@@ -58,7 +58,7 @@ const AppointmentBooking = () => {
 
   return (
     <>
-      <div className="bg-gray-100 flex items-center justify-center h-screen mt-10 mb-10 relative">
+      <div className="bg-gray-100 flex items-center justify-center h-screen mt-16 mb-10 relative">
         {/* Back to Home Button */}
         <button
           onClick={handleBackToHome}

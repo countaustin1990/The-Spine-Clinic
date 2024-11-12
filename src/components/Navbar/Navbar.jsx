@@ -4,7 +4,7 @@ import Logo from "../../assets/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Hook to detect route changes
+  const location = useLocation();
 
   // Toggle mobile menu open/close
   const toggleNav = () => {
@@ -54,6 +54,7 @@ const Navbar = () => {
               Contact
             </Link>
 
+            {/* No login/logout logic anymore */}
             <Link to="/appointmentbooking">
               <button className="text-white bg-blue-700 uppercase hover:bg-blue-800 font-bold focus:ring-4 focus:ring-blue-300 rounded-full text-sm px-4 py-2.5 text-center mr-3 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                 Doctor Appointment
@@ -98,7 +99,7 @@ const Navbar = () => {
             <Link
               to="/"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
-              onClick={() => setIsOpen(false)} // Close the menu after clicking a link
+              onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
@@ -124,6 +125,7 @@ const Navbar = () => {
               Contact
             </Link>
 
+            {/* No login/logout links */}
             <Link to="/appointmentbooking">
               <button
                 className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -138,5 +140,7 @@ const Navbar = () => {
     </nav>
   );
 };
+
+Navbar.propTypes = {};
 
 export default Navbar;
