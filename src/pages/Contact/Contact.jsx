@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 
@@ -112,7 +112,8 @@ const Contact = () => {
               <FaPhoneAlt className="text-xl text-gray-600" aria-label="Phone" />
               <div>
                 <h4 className="font-semibold text-gray-700">Phone</h4>
-                <p className="text-gray-600">+234-813-371-5097</p>
+                <span className="text-gray-600 flex items-center">+234-806-430-6055</span>
+                <span className="text-gray-600 flex items-center">+234-813-371-5094</span>
               </div>
             </div>
             <div className="flex items-center space-x-4">

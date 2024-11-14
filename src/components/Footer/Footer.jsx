@@ -30,9 +30,13 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="w-full md:w-1/3 mb-8">
             <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Us</h3>
-            <p className="text-gray-600 flex items-center">
-              <FaPhone className="mr-2" /> +123-456-7890
-            </p>
+            <span className="text-gray-600 flex items-center">
+              <FaPhone className="mr-2" /> +234-806-430-6055
+                
+            </span>
+            <span className="text-gray-600 flex items-center">
+              <FaPhone className="mr-2" />+234-813-371-5094
+            </span>
             <p className="text-gray-600 flex items-center">
               <FaEnvelope className="mr-2" /> info@thespineclinic.com
             </p>
