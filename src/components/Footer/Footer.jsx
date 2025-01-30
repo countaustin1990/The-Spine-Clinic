@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPhone, FaEnvelope } from "react
 import Logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom"
 
-const Footer = () => {
+const Footer = ( ) => {
   return (
     <footer className="bg-blue-50 py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
