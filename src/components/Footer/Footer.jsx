@@ -21,11 +21,11 @@ const Footer = () => {
           <div className="w-full md:w-1/3 mb-8">
             <h3 className="text-xl font-bold text-gray-800 mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-600">
- <li><Link to="home" className="hover:text-blue-600">About Us</Link></li>
-              <li><Link to="about" className="hover:text-blue-600">About Us</Link></li>
-              <li><Link to="services" className="hover:text-blue-600">Our Services</a></li>
-              <li><Link to="contact" className="hover:text-blue-600">Contact</Link></li>
-              <li><Link to="appointments" className="hover:text-blue-600">Book an Appointment</Link></li>
+ <li><Link to="/home" className="hover:text-blue-600">Home</Link></li>
+              <li><Link to="/about" className="hover:text-blue-600">About Us</Link></li>
+              <li><Link to="/services" className="hover:text-blue-600">Our Services</a></li>
+              <li><Link to="/contact" className="hover:text-blue-600">Contact</Link></li>
+              <li><Link to="/appointments" className="hover:text-blue-600">Book an Appointment</Link></li>
             </ul>
           </div>
 
