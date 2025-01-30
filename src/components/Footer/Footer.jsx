@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links  */}
           <div className="w-full md:w-1/3 mb-8">
             <h3 className="text-xl font-bold text-gray-800 mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-600">
