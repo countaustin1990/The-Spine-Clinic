@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
+import Button from "../button";
+import { Icons } from "../../utils/icons";
+import { useAuth } from "../../context/AuthProvider";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { logout } = useAuth();
 
   // Toggle mobile menu open/close
   const toggleNav = () => {
@@ -66,6 +70,8 @@ const Navbar = () => {
                 Doctor Appointment
               </button>
             </Link>
+
+            <Icons.logout onClick={logout} className="cursor-pointer" />
           </div>
 
           {/* Mobile Menu Button */}
