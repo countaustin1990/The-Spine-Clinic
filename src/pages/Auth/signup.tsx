@@ -1,8 +1,8 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthProvider";
-import Input from "../../components/input";
-import Button from "../../components/button";
+import Input from "../../components/input.tsx";
+import Button from "../../components/button.tsx";
 
 type Props = {};
 
