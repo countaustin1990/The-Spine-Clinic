@@ -1,22 +1,32 @@
-import { useState } from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
+import { sendMessage } from "../../services/firebaseService";
 
 const Contact = () => {
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
   // State for form fields
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   // State for form submission status
   const [formStatus, setFormStatus] = useState({
     success: null,
-    message: '',
+    message: "",
   });
 
   // Handle form input changes
@@ -45,41 +55,36 @@ const Contact = () => {
     if (!isFormValid()) {
       setFormStatus({
         success: false,
-        message: 'Please fill all fields correctly.',
+        message: "Please fill all fields correctly.",
       });
       return;
     }
 
     try {
       // Simulate an API request
-      const response = await fetch('https://example.com/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+      // const response = await fetch('https://example.com/contact', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(formData),
+      // });
 
-      if (response.ok) {
-        setFormStatus({
-          success: true,
-          message: 'Message sent successfully!',
-        });
-        setFormData({ name: '', email: '', message: '' }); // Reset form
-      } else {
-        setFormStatus({
-          success: false,
-          message: 'Failed to send message. Please try again later.',
-        });
-      }
+      await sendMessage(formData);
+
+      setFormStatus({
+        success: true,
+        message: "Message sent successfully!",
+      });
+      setFormData({ name: "", email: "", message: "" }); // Reset form
     } catch {
       setFormStatus({
         success: false,
-        message: 'Error occurred. Please try again.',
+        message: "Error occurred. Please try again.",
       });
     }
   };
 
   const handleBackToHome = () => {
-    navigate('/'); // Navigate to the home page
+    navigate("/"); // Navigate to the home page
   };
 
   return (
@@ -93,12 +98,16 @@ const Contact = () => {
       </button>
 
       <div className="w-full max-w-5xl bg-blue-200 rounded-lg shadow-lg p-8 md:p-12 space-y-8">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-6">Contact Us</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-800 mb-6">
+          Contact Us
+        </h2>
 
         {formStatus.message && (
           <div
             className={`text-center p-4 mb-4 ${
-              formStatus.success ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'
+              formStatus.success
+                ? "bg-green-200 text-green-800"
+                : "bg-red-200 text-red-800"
             }`}
           >
             {formStatus.message}
@@ -109,22 +118,35 @@ const Contact = () => {
           {/* Contact Info Section */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
-              <FaPhoneAlt className="text-xl text-gray-600" aria-label="Phone" />
+              <FaPhoneAlt
+                className="text-xl text-gray-600"
+                aria-label="Phone"
+              />
               <div>
                 <h4 className="font-semibold text-gray-700">Phone</h4>
-                <span className="text-gray-600 flex items-center">+234-806-430-6055</span>
-                <span className="text-gray-600 flex items-center">+234-813-371-5094</span>
+                <span className="text-gray-600 flex items-center">
+                  +234-806-430-6055
+                </span>
+                <span className="text-gray-600 flex items-center">
+                  +234-813-371-5094
+                </span>
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <FaEnvelope className="text-xl text-gray-600" aria-label="Email" />
+              <FaEnvelope
+                className="text-xl text-gray-600"
+                aria-label="Email"
+              />
               <div>
                 <h4 className="font-semibold text-gray-700">Email</h4>
                 <p className="text-gray-600">info@thespineclinic.org</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <FaMapMarkerAlt className="text-xl text-gray-600" aria-label="Location" />
+              <FaMapMarkerAlt
+                className="text-xl text-gray-600"
+                aria-label="Location"
+              />
               <div>
                 <h4 className="font-semibold text-gray-700">Location</h4>
                 <p className="text-gray-600">Lekki Phase 1, Lagos, Nigeria</p>
@@ -135,16 +157,40 @@ const Contact = () => {
             <div className="space-y-4">
               <h4 className="font-semibold text-gray-700">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-600 hover:text-blue-800" aria-label="Facebook">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl text-blue-600 hover:text-blue-800"
+                  aria-label="Facebook"
+                >
                   <FaFacebook />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-400 hover:text-blue-600" aria-label="Twitter">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl text-blue-400 hover:text-blue-600"
+                  aria-label="Twitter"
+                >
                   <FaTwitter />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-xl text-pink-500 hover:text-pink-700" aria-label="Instagram">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl text-pink-500 hover:text-pink-700"
+                  aria-label="Instagram"
+                >
                   <FaInstagram />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-700 hover:text-blue-900" aria-label="LinkedIn">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl text-blue-700 hover:text-blue-900"
+                  aria-label="LinkedIn"
+                >
                   <FaLinkedin />
                 </a>
               </div>
@@ -154,7 +200,12 @@ const Contact = () => {
           {/* Contact Form Section */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="flex flex-col">
-              <label htmlFor="name" className="text-sm font-semibold text-gray-600 mb-2">Name</label>
+              <label
+                htmlFor="name"
+                className="text-sm font-semibold text-gray-600 mb-2"
+              >
+                Name
+              </label>
               <input
                 type="text"
                 id="name"
@@ -168,7 +219,12 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="email" className="text-sm font-semibold text-gray-600 mb-2">Email</label>
+              <label
+                htmlFor="email"
+                className="text-sm font-semibold text-gray-600 mb-2"
+              >
+                Email
+              </label>
               <input
                 type="email"
                 id="email"
@@ -182,7 +238,12 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="message" className="text-sm font-semibold text-gray-600 mb-2">Message</label>
+              <label
+                htmlFor="message"
+                className="text-sm font-semibold text-gray-600 mb-2"
+              >
+                Message
+              </label>
               <textarea
                 id="message"
                 name="message"

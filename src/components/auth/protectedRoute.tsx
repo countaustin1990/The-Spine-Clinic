@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useNavigate, Outlet } from "react-router-dom";
-import { AuthContextType, useAuth } from "../../context/AuthProvider";
+import { useAuth } from "../../context/FirebaseAuthProvider";
 
 const ProtectedRoute = () => {
-  const { user } = useAuth() as AuthContextType;
+  const { user } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
