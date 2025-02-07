@@ -1,8 +1,8 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Input from "../../components/input.tsx";
-import Button from "../../components/button.tsx";
 import { useAuth } from "../../context/FirebaseAuthProvider.tsx";
+import Button from "../../components/ui/button.tsx";
+import Input from "../../components/ui/input.tsx";
 
 const Signup = () => {
   const { signup } = useAuth();

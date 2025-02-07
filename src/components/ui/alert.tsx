@@ -1,5 +1,5 @@
 import React from "react";
-import { useAuth } from "../context/FirebaseAuthProvider";
+import { useAuth } from "../../context/FirebaseAuthProvider";
 
 const Notify = () => {
   const { message } = useAuth();

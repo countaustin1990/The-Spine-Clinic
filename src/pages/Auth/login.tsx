@@ -1,8 +1,8 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "../../components/button";
-import Input from "../../components/input";
 import { useAuth } from "../../context/FirebaseAuthProvider";
+import Input from "../../components/ui/input";
+import Button from "../../components/ui/button";
 
 const Login = () => {
   const { login } = useAuth();
