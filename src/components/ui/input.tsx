@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes } from "react";
-import { Icons } from "../utils/icons";
 import { motion } from "framer-motion";
+import { Icons } from "../../utils/icons";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
