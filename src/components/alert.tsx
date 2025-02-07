@@ -1,11 +1,11 @@
 import React from "react";
-import { useAuth } from "../context/AuthProvider";
+import { useAuth } from "../context/FirebaseAuthProvider";
 
 const Notify = () => {
   const { message } = useAuth();
   return (
     <>
-      {message != null && (
+      {message?.message != null && (
         <div
           className={`${
             message.variant == "error"

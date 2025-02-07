@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
-import Button from "../button";
 import { Icons } from "../../utils/icons";
-import { useAuth } from "../../context/AuthProvider";
+import { useAuth } from "../../context/FirebaseAuthProvider";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
