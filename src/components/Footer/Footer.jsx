@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-between">
           {/* Clinic Information */}
-          <div className="w-full md:w-1/3 mb-8">
+          <div className="w-full md:w-1/3 mb-8">s
             <img src={Logo} className="w-20" alt="Flowbite Logo" />
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               The Spine Clinic
