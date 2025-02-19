@@ -44,7 +44,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100">
       <ServicesHero/>
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">Our Services</h1>
