@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const ServicesHero = () => {
   return (
-    <section className="bg-gray-50 pt-8 md:pt-16 pb-12 md:pb-24">
+    <section className="bg-gray-50 pt-8 md:pt-16">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left Section - Text Content */}
         <motion.div
