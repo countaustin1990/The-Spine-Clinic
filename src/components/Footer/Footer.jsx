@@ -78,7 +78,7 @@ const Footer = () => {
               >
                 <FaFacebookF />
               </a>
-              <a
+              <a 
                 href="https://linkedin.com"
                 className="text-blue-600 hover:text-blue-800"
               >
