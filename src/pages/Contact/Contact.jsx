@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaPhone,
+  FaTwitter
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
