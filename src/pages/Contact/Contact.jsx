@@ -59,7 +59,7 @@ const Contact = () => {
       });
       return;
     }
-
+ 
     try {
       // Simulate an API request
       // const response = await fetch('https://example.com/contact', {
