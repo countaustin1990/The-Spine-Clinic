@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
-import { sendMessage } from "../../services/firebaseService";
+import { sendMessage } from "../../services/firebaseService"; 
 
 const Contact = () => {
   const navigate = useNavigate(); // Initialize the useNavigate hook
