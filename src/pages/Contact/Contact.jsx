@@ -176,15 +176,8 @@ const Contact = () => {
                 >
                   <FaInstagram />
                 </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl text-blue-700 hover:text-blue-900"
-                  aria-label="LinkedIn"
-                >
-                  <FaLinkedin />
-                </a>
+                
+                 
                  <a
                   href="https://twitter.com"
                   target="_blank"
@@ -192,8 +185,15 @@ const Contact = () => {
                   className="text-xl text-blue-400 hover:text-blue-600"
                   aria-label="Twitter"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </a>
+              <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl text-blue-700 hover:text-blue-900"
+                  aria-label="LinkedIn"
+                >
               </div>
             </div>
           </div>
