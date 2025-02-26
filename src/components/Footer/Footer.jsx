@@ -6,7 +6,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
-import { FiX } from "react-icons/fi";
+import { FaXTwitter, FaInstagram  } from "react-icons/fa6";
 import Logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 
@@ -79,12 +79,6 @@ const Footer = () => {
                 <FaFacebookF />
               </a>
               <a
-                href="https://twitter.com"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                <FaTwitter />
-              </a>
-              <a
                 href="https://linkedin.com"
                 className="text-blue-600 hover:text-blue-800"
               >
@@ -93,8 +87,11 @@ const Footer = () => {
               </a>
 
               <a href="" className="text-blue-600 hover:text-blue-800">
-                <FiX size={24} />
+                <FaXTwitter size={24} />
               </a>
+              <a href="" className="text-blue-600 hover:text-blue-800">
+                <FaInstagram size={24} />
+                </a>
             </div>
           </div>
         </div>
