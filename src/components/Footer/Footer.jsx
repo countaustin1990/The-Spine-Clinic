@@ -66,7 +66,7 @@ const Footer = () => {
             </span>
             <span className="text-gray-600 flex items-center">
               <FaPhone className="mr-2" />
-              +234-813-371-5094
+              +234 803 890 9678
             </span>
             <p className="text-gray-600 flex items-center">
               <FaEnvelope className="mr-2" /> info@thespineclinic.com
