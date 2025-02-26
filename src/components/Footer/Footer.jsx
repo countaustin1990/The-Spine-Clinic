@@ -6,6 +6,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import { FiX } from "react-icons/fi";
 import Logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 
@@ -88,6 +89,11 @@ const Footer = () => {
                 className="text-blue-600 hover:text-blue-800"
               >
                 <FaLinkedinIn />
+            
+              </a>
+
+              <a href="" className="text-blue-600 hover:text-blue-800">
+                <FiX size={24} />
               </a>
             </div>
           </div>
