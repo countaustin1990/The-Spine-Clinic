@@ -4,7 +4,6 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaFacebook,
-  FaTwitter,
   FaInstagram,
   FaLinkedin,
   FaPhone,
@@ -166,15 +165,7 @@ const Contact = () => {
                 >
                   <FaFacebook />
                 </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl text-blue-400 hover:text-blue-600"
-                  aria-label="Twitter"
-                >
-                  <FaTwitter />
-                </a>
+               
                 <a
                   href="https://instagram.com"
                   target="_blank"
@@ -192,6 +183,15 @@ const Contact = () => {
                   aria-label="LinkedIn"
                 >
                   <FaLinkedin />
+                </a>
+                 <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl text-blue-400 hover:text-blue-600"
+                  aria-label="Twitter"
+                >
+                  <FaTwitter />
                 </a>
               </div>
             </div>
