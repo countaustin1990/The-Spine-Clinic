@@ -158,7 +158,7 @@ const Contact = () => {
               <h4 className="font-semibold text-gray-700">Follow Us</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/share/15piSC9eZS/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xl text-blue-600 hover:text-blue-800"
@@ -168,7 +168,7 @@ const Contact = () => {
                 </a>
                
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/thespineclinic_?igsh=MWdvaHkzcjZoeDBhYg== "
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xl text-pink-500 hover:text-pink-700"
@@ -179,7 +179,7 @@ const Contact = () => {
                 
                  
                  <a
-                  href="https://twitter.com"
+                  href="https://x.com/thespineclinik?t=fXdWu6pKsJaf1Qhbs2KEGw&s=09"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xl text-blue-400 hover:text-blue-600"
