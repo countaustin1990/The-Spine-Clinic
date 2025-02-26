@@ -168,7 +168,7 @@ const Contact = () => {
                 </a>
                
                 <a
-                  href="https://www.instagram.com/thespineclinic_?igsh=MWdvaHkzcjZoeDBhYg== "
+                  href="https://www.instagram.com/thespineclinic_?igsh=MWdvaHkzcjZoeDBhYg=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xl text-pink-500 hover:text-pink-700"
