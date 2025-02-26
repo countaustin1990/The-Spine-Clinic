@@ -128,7 +128,7 @@ const Contact = () => {
                   +234-806-430-6055
                 </span>
                 <span className="text-gray-600 flex items-center">
-                  +234-813-371-5094
+                  +234 803 890 9678
                 </span>
               </div>
             </div>
