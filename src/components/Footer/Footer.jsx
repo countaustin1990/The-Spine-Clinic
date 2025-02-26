@@ -73,7 +73,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/15piSC9eZS/"
                 className="text-blue-600 hover:text-blue-800"
               >
                 <FaFacebookF />
@@ -86,10 +86,10 @@ const Footer = () => {
             
               </a>
   
-              <a href="" className="text-blue-600 hover:text-blue-800">
+              <a href="https://x.com/thespineclinik?t=fXdWu6pKsJaf1Qhbs2KEGw&s=09" className="text-blue-600 hover:text-blue-800">
                 <FaXTwitter />
               </a>
-              <a href="" className="text-blue-600 hover:text-blue-800">
+              <a href="https://www.instagram.com/thespineclinic_?igsh=MWdvaHkzcjZoeDBhYg== " className="text-blue-600 hover:text-blue-800">
                 <FaInstagram />
                 </a>
             </div>
