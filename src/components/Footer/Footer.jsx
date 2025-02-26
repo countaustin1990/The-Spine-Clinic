@@ -87,10 +87,10 @@ const Footer = () => {
               </a>
 
               <a href="" className="text-blue-600 hover:text-blue-800">
-                <FaXTwitter size={24} />
+                <FaXTwitter />
               </a>
               <a href="" className="text-blue-600 hover:text-blue-800">
-                <FaInstagram size={24} />
+                <FaInstagram />
                 </a>
             </div>
           </div>
