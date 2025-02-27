@@ -1,4 +1,4 @@
-import HtsLogo from "../../assets/HtsLogo.png"; // Ensure this path is correct
+import HtsLogo from "../../assets/Htslogo.png"; // Ensure this path is correct
 import Najoda from "../../assets/Najoda.png";
 import PearlsLogo from "../../assets/PearlsLogo.png";
 import EverCare from "../../assets/EverCare.png";
