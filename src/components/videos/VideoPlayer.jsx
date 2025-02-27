@@ -31,15 +31,15 @@ const VideoPlayer = () => {
         <iframe
           ref={iframeRef}
           className="w-full h-96 rounded-lg shadow-lg" // Increased height and width
-          src="https://www.youtube.com/embed/W7f2jX3cG-0?enablejsapi=1&rel=0&controls=1" // 'controls=1' enables the default YouTube controls
+          src="http://127.0.0.1:5173/" // 'controls=1' enables the default YouTube controls
           allow="autoplay; encrypted-media"
           allowFullScreen
           title="YouTube Video Player" // Accessibility improvement
         ></iframe>
 
         <div className="text-white mt-4 text-center">
-          <h1 className="text-2xl font-bold uppercase">Together They Will Walk Again</h1>
-          <p className="mt-2 text-xl">
+          <h1 className="text-2xl font-extrabold uppercase">Together They Will Walk Again</h1>
+          <p className="mt-2 text-md font-medium">
             One of many patients testifying to our promise.
           </p>
         </div>
