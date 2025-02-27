@@ -55,7 +55,7 @@ const AboutHero = () => {
       >
         <FaPhoneAlt className="text-blue-700 mr-3" />
         
-        <span className="text-blue-800 font-medium">Call Us: (+234) 813-371-5097 or  (+234) 806-430-6055</span>
+        <span className="text-blue-800 font-medium">Call Us: (+234) 803 890 9678 or  (+234) 806-430-6055</span>
       </motion.div>
     </section>
   );

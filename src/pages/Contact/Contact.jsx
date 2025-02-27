@@ -4,14 +4,12 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaFacebook,
-  FaTwitter,
-  FaInstagram,
   FaLinkedin,
-  FaPhone,
 } from "react-icons/fa";
+import { FaXTwitter, FaInstagram  } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
-import { sendMessage } from "../../services/firebaseService";
+import { sendMessage } from "../../services/firebaseService"; 
 
 const Contact = () => {
   const navigate = useNavigate(); // Initialize the useNavigate hook
@@ -59,7 +57,7 @@ const Contact = () => {
       });
       return;
     }
-
+ 
     try {
       // Simulate an API request
       // const response = await fetch('https://example.com/contact', {
@@ -122,13 +120,14 @@ const Contact = () => {
                 className="text-xl text-gray-600"
                 aria-label="Phone"
               />
+              
               <div>
                 <h4 className="font-semibold text-gray-700">Phone</h4>
                 <span className="text-gray-600 flex items-center">
                   +234-806-430-6055
                 </span>
                 <span className="text-gray-600 flex items-center">
-                  +234-813-371-5094
+                  +234 803 890 9678
                 </span>
               </div>
             </div>
@@ -157,43 +156,47 @@ const Contact = () => {
             <div className="space-y-4">
               <h4 className="font-semibold text-gray-700">Follow Us</h4>
               <div className="flex space-x-4">
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl text-blue-600 hover:text-blue-800"
-                  aria-label="Facebook"
-                >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl text-blue-400 hover:text-blue-600"
-                  aria-label="Twitter"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl text-pink-500 hover:text-pink-700"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl text-blue-700 hover:text-blue-900"
-                  aria-label="LinkedIn"
-                >
-                  <FaLinkedin />
-                </a>
-              </div>
+              <a
+                href="https://www.facebook.com/share/15piSC9eZS/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl text-blue-600 hover:text-blue-800"
+                aria-label="Facebook"
+              >
+                <FaFacebook />
+              </a>
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl text-blue-700 hover:text-blue-900"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a
+                href="https://x.com/thespineclinik?t=fXdWu6pKsJaf1Qhbs2KEGw&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl text-blue-400 hover:text-blue-600"
+                aria-label="Twitter"
+              >
+                <FaXTwitter />
+              </a>
+
+              <a
+                href="https://www.instagram.com/thespineclinic_?igsh=MWdvaHkzcjZoeDBhYg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl text-pink-500 hover:text-pink-700"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+
             </div>
           </div>
 

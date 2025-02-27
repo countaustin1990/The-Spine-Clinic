@@ -1,11 +1,11 @@
 /**/
 import {
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import { FaXTwitter, FaInstagram  } from "react-icons/fa6";
 import Logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 
@@ -65,30 +65,32 @@ const Footer = () => {
             </span>
             <span className="text-gray-600 flex items-center">
               <FaPhone className="mr-2" />
-              +234-813-371-5094
+              +234 803 890 9678
             </span>
             <p className="text-gray-600 flex items-center">
               <FaEnvelope className="mr-2" /> info@thespineclinic.com
             </p>
             <div className="flex space-x-4 mt-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/15piSC9eZS/"
                 className="text-blue-600 hover:text-blue-800"
               >
                 <FaFacebookF />
               </a>
-              <a
-                href="https://twitter.com"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                <FaTwitter />
-              </a>
-              <a
+              <a 
                 href="https://linkedin.com"
                 className="text-blue-600 hover:text-blue-800"
               >
                 <FaLinkedinIn />
+            
               </a>
+  
+              <a href="https://x.com/thespineclinik?t=fXdWu6pKsJaf1Qhbs2KEGw&s=09" className="text-blue-600 hover:text-blue-800">
+                <FaXTwitter />
+              </a>
+              <a href="https://www.instagram.com/thespineclinic_?igsh=MWdvaHkzcjZoeDBhYg== " className="text-blue-600 hover:text-blue-800">
+                <FaInstagram />
+                </a>
             </div>
           </div>
         </div>
