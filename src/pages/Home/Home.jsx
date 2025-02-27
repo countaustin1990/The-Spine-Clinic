@@ -18,7 +18,7 @@ const settings = {
   autoplaySpeed: 5000,
   fade: true,
 };
-
+   
 const Home = () => {
   return (
     <>
