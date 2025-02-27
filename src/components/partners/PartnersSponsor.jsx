@@ -1,5 +1,5 @@
 import HtsLogo from "../../assets/Htslogo.png"; // Ensure this path is correct
-import Najoda from "../../assets/Najoda.png";
+import Najoda from "../../assets/najoda.png";
 import PearlsLogo from "../../assets/PearlsLogo.png";
 import EverCare from "../../assets/EverCare.png";
 import BenqLogo from "../../assets/BenqLogo.png";
