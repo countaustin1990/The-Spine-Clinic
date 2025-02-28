@@ -12,7 +12,7 @@ const partners = [
   { name: "BenQ Medical", logo: BenqLogo },
 ];
 
-const PartnersSponsors = () => {
+const PartnersSponsor = () => {
   return (
     <section className="bg-gray-100 dark:bg-gray-900 py-16">
       <div className="container mx-auto px-6 text-center">
@@ -42,4 +42,4 @@ const PartnersSponsors = () => {
   );
 };
 
-export default PartnersSponsors;
+export default PartnersSponsor;
