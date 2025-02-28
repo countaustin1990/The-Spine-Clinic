@@ -76,8 +76,8 @@ const Home = () => {
           </div>
         </Slider>
       </div>
-      <PartnersSponsors/>
-      {/*<PartnersSponsors/>*/}
+      <PartnersSponsor/>
+      {/*<PartnersSponsor/>*/}
    <VideoPlayer/>
     </>
   );
