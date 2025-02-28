@@ -16,10 +16,10 @@ const AboutHero = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight mb-4 flex items-center">
             <FaClinicMedical className="text-blue-700 mr-3" />
-            Advanced Knee Surgery Care
+            Advanced Knee Care
           </h1>
           <p className="text-lg text-blue-800 mb-6">
-            At <span className="font-semibold">Orthopedic Knee Clinic</span>, we specialize in cutting-edge, minimally invasive knee surgeries, ensuring faster recovery and better outcomes for our patients.
+            At <span className="font-semibold">The Spinic</span>, we specialize in cutting-edge, minimally invasive knee care, ensuring faster recovery and better outcomes for our patients.
           </p>
           <div className="mt-4">
              <Link to="/blog">
