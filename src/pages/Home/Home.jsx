@@ -7,6 +7,7 @@ import '../../index.css'; // Import custom CSS
 //import Heropic1 from "../../assets/Heropic1.avif" // Adjust the path as necessary
 import VideoPlayer from '../../components/videos/VideoPlayer';
 import PartnersSponsor from '../../components/partners/PartnersSponsor';
+import Jumbotron from '../../components/jumbotron/Jumbotron';
 
 const settings = {
   dots: true,
@@ -76,6 +77,7 @@ const Home = () => {
           </div>
         </Slider>
       </div>
+      <Jumbotron/>
       <PartnersSponsor/>
       {/*<PartnersSponsor/>*/}
    <VideoPlayer/>
