@@ -1,6 +1,6 @@
 import HtsLogo from "../../assets/Htslogo.png";
 import Najoda from "../../assets/Najoda.png";
-import PearlsLogo from "../../assets/Pearlslogo.png";
+import PearlsLogo from "../../assets/pearlslogo.png";
 import EverCare from "../../assets/EverCare.png";
 import BenqLogo from "../../assets/BenqLogo.png";
 
