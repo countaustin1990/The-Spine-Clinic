@@ -1,8 +1,8 @@
 import HtsLogo from "../../assets/Htslogo.png";
 import Najoda from "../../assets/Najoda.png";
 import PearlsLogo from "../../assets/pearlslogo.png";
-import EverCare from "../../assets/EverCare.png";
-import BenqLogo from "../../assets/BenqLogo.png";
+import EverCare from "../../assets/evercare.png";
+import BenqLogo from "../../assets/benqlogo.png";
 
 const partners = [
   { name: "HTS", logo: HtsLogo },
