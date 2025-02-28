@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css'; // Import custom CSS
 //import Heropic1 from "../../assets/Heropic1.avif" // Adjust the path as necessary
 import VideoPlayer from '../../components/videos/VideoPlayer';
-import PartnersSponsors from '../../components/partners/PartnersSponsor';
+import PartnersSponsor from '../../components/partners/PartnersSponsor';
 
 const settings = {
   dots: true,
