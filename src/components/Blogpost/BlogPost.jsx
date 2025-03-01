@@ -2,7 +2,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Seventh from '../../assets/seventh.jpg';
-import Eighth from '../../assets/eighth.jpeg';
+import Kaytoken from '../../assets/Kaytoken.jpg'
 import Nineth from '../../assets/nineth.webp';
 import Tenth from '../../assets/tenth.jpg';
  
@@ -14,7 +14,7 @@ const BlogCarousel = () => {
       content: 'Orthopedic surgery is a specialty focusing on conditions involving the musculoskeletal system.',
       date: 'September 5, 2024',
       author: 'Dr. John Doe',
-      image: Eighth,
+      image: Kaytoken,
     },
     {
       title: 'Advancements in Joint Replacement',

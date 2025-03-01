@@ -31,7 +31,7 @@ const services = [
   {
     id: 5,
     icon: <FaHandHoldingHeart className="text-blue-500 text-4xl" />,
-    title: 'Patient Care',
+    title: 'Comprehensive Spine Care',
     description: 'Personalized patient care and support throughout the treatment process.'
   },
   {

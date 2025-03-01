@@ -3,10 +3,9 @@ import NajodaLogo from "../../assets/Najodalogo.png";
 import PearlsLogo from "../../assets/pearlslogo.png";
 import Coptic from "../../assets/coptic.png";
 
-
 const partners = [
   { name: "HTS", logo: HtsLogo },
-  { name: "Najoda Foundation", logo: NajodaLogo },
+  { name: "Najoda Foundation", logo: NajodaLogo},
   { name: "Pearls Healthcare", logo: PearlsLogo },
   { name: "Coptic Hospital", logo: Coptic },
 ];
@@ -28,7 +27,7 @@ const PartnersSponsor = () => {
             <div key={index} className="flex items-center justify-center p-4">
               <img
                 src={partner.logo}
-                alt={`${partner.name} Logo`}
+                alt={partner.alt || `${partner.name} Logo`} // Use custom alt text for Najoda, default for others
                 className="h-20 md:h-24 object-contain aspect-w-1 aspect-h-1 grayscale hover:grayscale-0 hover:scale-105 transition-transform duration-300"
                 loading="lazy"
                 aria-label={partner.name}

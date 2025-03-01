@@ -6,8 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../../index.css'; // Import custom CSS
 //import Heropic1 from "../../assets/Heropic1.avif" // Adjust the path as necessary
 import VideoPlayer from '../../components/videos/VideoPlayer';
-import PartnersSponsor from '../../components/partners/PartnersSponsor';
-import Jumbotron from '../../components/jumbotron';
+import PartnersSponsor from '../../components/partners/PartnersSponsor.test';
+import Jumbotron from '../../components/jumbotron/Jumbotron';
 
 const settings = {
   dots: true,

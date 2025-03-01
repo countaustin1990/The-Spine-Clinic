@@ -1,40 +1,41 @@
 import { useRef, useEffect } from "react";
 
 const VideoPlayer = () => {
-  const iframeRef = useRef(null); // To reference the iframe element
+  const iframeRef = useRef(null);
 
-  // Initialize YouTube Player API after iframe is loaded
   useEffect(() => {
-    const iframeElement = iframeRef.current; // Store the current iframe element in a variable
+    const iframeElement = iframeRef.current;
+
+    if (!iframeElement) return;
 
     const handleIframeLoad = () => {
-      // Post an "init" message to the iframe (optional if you want to mute initially)
-      iframeElement.contentWindow.postMessage('{"event":"command","func":"mute","args":""}', '*');
-    };
-
-    if (iframeElement) {
-      iframeElement.addEventListener("load", handleIframeLoad); // Use the local iframeElement
-    }
-
-    // Cleanup: remove event listener on cleanup
-    return () => {
-      if (iframeElement) {
-        iframeElement.removeEventListener("load", handleIframeLoad); // Use the local iframeElement
+      try {
+        iframeElement?.contentWindow?.postMessage(
+          '{"event":"command","func":"mute","args":""}',
+          "*"
+        );
+      } catch (error) {
+        console.error("PostMessage Error:", error);
       }
     };
-  }, []); // Only run once when the component mounts
+
+    iframeElement.addEventListener("load", handleIframeLoad);
+
+    return () => {
+      iframeElement.removeEventListener("load", handleIframeLoad);
+    };
+  }, []);
 
   return (
     <div className="flex justify-center items-center bg-gray-900 p-4 min-h-screen">
-      <div className="w-full max-w-4xl"> {/* Increase max width to make the video larger */}
-        {/* Embed YouTube video via iframe */}
+      <div className="w-full max-w-4xl">
         <iframe
           ref={iframeRef}
-          className="w-full h-96 rounded-lg shadow-lg" // Increased height and width
-          src="http://127.0.0.1:5173/" // 'controls=1' enables the default YouTube controls
+          className="w-full h-96 rounded-lg shadow-lg"
+          src="https://www.youtube.com/embed/pC0Pqr4mw8A"
           allow="autoplay; encrypted-media"
           allowFullScreen
-          title="YouTube Video Player" // Accessibility improvement
+          title="YouTube Video Player"
         ></iframe>
 
         <div className="text-white mt-4 text-center">
