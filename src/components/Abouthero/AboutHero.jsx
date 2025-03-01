@@ -24,7 +24,7 @@ const AboutHero = () => {
           <div className="mt-4">
              <Link to="/blog">
                 <button className="bg-blue-700 text-white py-3 px-8 rounded-full shadow-lg hover:bg-blue-600 focus:ring-2 focus:ring-blue-600 transition duration-300">
-                    Learn More About Us 
+                    Learn More 
                 </button>
              </Link>
           </div>
