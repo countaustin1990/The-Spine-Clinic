@@ -109,35 +109,35 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="/"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/services"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               Services
             </Link>
             <Link
               to="/about"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <Link
               to="/blog"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               Blog
             </Link>
             <Link
               to="/contact"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               Contact
