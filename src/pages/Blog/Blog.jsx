@@ -10,7 +10,7 @@ const Blog = () => {
         </h1>
      <Hero/>*/}
         <BlogPost/>
-        <h3 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">
+        <h3 className="text-4xl font-bold text-gray-800 mb-6 text-center">
           More Updates
         </h3>
         <BlogList/>
